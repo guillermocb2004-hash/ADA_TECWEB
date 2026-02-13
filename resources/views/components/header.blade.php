@@ -32,14 +32,37 @@
       margin-right: 10px;
       font-size: 1.2rem;
     }
-
+    {
+      background-color: #121212; 
+      color: #b3b3b3; 
+      font-family: sans-serif;
+      overflow: hidden; 
+    }
+    .sidebar {
+      background-color: #000;
+      height: calc(100vh - 90px); 
+      overflow-y: auto;
+    }
+    .nav-link {
+      color: #b3b3b3;
+      font-weight: 600;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: #fff;
+      background-color: #282828;
+    }
+    .nav-link i {
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
     .main-content {
       background: linear-gradient(180deg, #222 0%, #121212 40%);
       height: calc(100vh - 90px);
       overflow-y: auto;
       padding-bottom: 20px;
     }
-
     /* ===== TARJETA DE MÚSICA ===== */
     .music-card {
       background-color: #181818; /* fondo oscuro */
@@ -76,6 +99,42 @@
     .card-text {
       font-size: 0.85rem;
       color: #b3b3b3;
+    }
+    .music-card {
+      background-color: #181818;
+      padding: 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      height: 100%;
+      display: block;
+    }
+    .music-card:hover {
+      background-color: #282828;
+    }
+    .music-card img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .card-title {
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-text {
+      font-size: 0.85rem;
+      line-height: 1.2;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
     .player-bar {

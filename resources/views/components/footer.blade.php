@@ -5,6 +5,10 @@
         <div class="d-flex flex-column justify-content-center">
             <span class="text-white fw-bold" style="font-size: 0.9rem;">Un Verano Sin Ti</span>
             <span style="font-size: 0.75rem;">Bad Bunny</span>
+        <img src="https://via.placeholder.com/56/333/fff?text=Img" class="rounded me-3 d-none d-sm-block" alt="Cover">
+        <div class="d-flex flex-column justify-content-center">
+            <span class="text-white fw-bold" style="font-size: 0.9rem;">Canción de Prueba</span>
+            <span style="font-size: 0.75rem;">Nombre del Artista</span>
         </div>
         <i class="bi bi-heart ms-4 d-none d-md-block"></i>
     </div>

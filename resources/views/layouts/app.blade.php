@@ -7,18 +7,14 @@
 </head>
 <body>
 
-    {{-- Encabezado --}}
     <x-header />
 
-    {{-- Menú --}}
     <x-menu />
 
-    {{-- Cuerpo --}}
     <main class="container">
         @yield('content')
     </main>
 
-    {{-- Footer --}}
     <x-footer />
 
 </body>
