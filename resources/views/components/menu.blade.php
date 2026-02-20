@@ -1,44 +1,33 @@
-<!-- MENÚ LATERAL -->
-<div class="sidebar p-3">
-    <div class="text-white mb-4 fs-4 fw-bold">
-        🎵 Mi Music Player
+<div class="d-flex justify-content-center mt-2 mb-4">
+    <div class="px-2 py-2 rounded-pill shadow-lg" style="background-color: #1c1c1e; border: 1px solid #333;">
+        <ul class="nav nav-pills align-items-center mb-0 flex-nowrap overflow-auto" style="gap: 5px;">
+            
+            <li class="nav-item ms-2">
+                <a class="nav-link rounded-pill px-4 py-2 fw-semibold {{ request()->routeIs('home') ? 'bg-white text-dark' : 'text-light' }}" href="{{ route('home') }}" style="transition: 0.3s ease;">
+                    <i class="bi {{ request()->routeIs('home') ? 'bi-house-fill' : 'bi-house' }} me-1"></i> Inicio
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-pill px-4 py-2 fw-semibold {{ request()->routeIs('explore') ? 'bg-white text-dark' : 'text-light' }}" href="{{ route('explore') }}" style="transition: 0.3s ease;">
+                    <i class="bi {{ request()->routeIs('explore') ? 'bi-grid-fill' : 'bi-grid' }} me-1"></i> Explorar
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-pill px-4 py-2 fw-semibold {{ request()->routeIs('library') ? 'bg-white text-dark' : 'text-light' }}" href="{{ route('library') }}" style="transition: 0.3s ease;">
+                    <i class="bi {{ request()->routeIs('library') ? 'bi-music-note-list' : 'bi-music-note-list' }} me-1"></i> Biblioteca
+                </a>
+            </li>
+
+            <li class="nav-item d-none d-sm-block">
+                <div style="width: 1px; height: 20px; background-color: #444; margin: 0 10px;"></div>
+            </li>
+
+            <li class="nav-item pe-2">
+                <a class="nav-link rounded-pill px-3 py-2 fw-semibold text-secondary custom-hover" href="#" style="transition: 0.3s ease;">
+                    <i class="bi bi-collection-play me-1"></i> Mis Playlists
+                </a>
+            </li>
+
+        </ul>
     </div>
-    <ul class="nav flex-column">
-        <li class="nav-item mb-2">
-            <a class="nav-link active" href="#">
-                <i class="bi bi-house-fill"></i> Inicio
-            </a>
-        </li>
-        <li class="nav-item mb-2">
-            <a class="nav-link" href="#">
-                <i class="bi bi-search"></i> Buscar
-            </a>
-        </li>
-        <li class="nav-item mb-2">
-            <a class="nav-link" href="#">
-                <i class="bi bi-music-note-list"></i> Biblioteca
-            </a>
-        </li>
-    </ul>
-    <!-- Línea divisoria -->
-    <hr class="text-secondary">
-    <p class="text-secondary small">Mis Playlists</p>
-    <ul class="nav flex-column small">
-        <li class="nav-item mb-1">
-            <a class="nav-link" href="#">Rock Favorito</a>
-        </li>
-        <li class="nav-item mb-1">
-            <a class="nav-link" href="#">Relax Total</a>
-        </li>
-        <li class="nav-item mb-1">
-            <a class="nav-link" href="#">Gym Power</a>
-        </li>
-<div>
-    <!-- Live as if you were to die tomorrow. Learn as if you were to live forever. - Mahatma Gandhi -->
-    <nav>
-    <ul>
-        <li><a href="{{ route('home') }}">Playlists</a></li>
-        <li><a href="#">Artistas</a></li>
-        <li><a href="#">Agregadas recientemente</a></li>
-    </ul>
 </div>

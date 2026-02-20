@@ -9,3 +9,22 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+/* Toque personal imitando la suavidad de Apple Music */
+.music-card {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.3s ease;
+    display: block;
+}
+
+.music-card:hover {
+    transform: scale(1.03); /* Efecto de flotación sutil */
+    opacity: 0.9;
+}
+
+.music-card img, .music-card .rounded-3, .music-card .rounded-4 {
+    transition: box-shadow 0.3s ease;
+}
+
+.music-card:hover img {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6) !important;
+}
